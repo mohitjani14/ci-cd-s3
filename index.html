@@ -1,1 +1,105 @@
-<h1> Hello !! This Is Demo. Updated Website. </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Lover's Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f6f2;
+      color: #3e2c2c;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6f4e37, #a47149);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .quote-box {
+      background: #fff3e0;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-style: italic;
+      transition: all 0.3s ease;
+    }
+
+    .btn-refresh {
+      background-color: #6f4e37;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-refresh:hover {
+      background-color: #563b2a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☕ Coffee Lover's Hub</h1>
+    <p>Your daily dose of caffeine and good vibes</p>
+  </header>
+
+  <div class="container">
+    <div class="quote-box" id="quoteBox">
+      “Life happens, coffee helps.”
+    </div>
+    <button class="btn-refresh" onclick="newQuote()">Get a New Quote</button>
+  </div>
+
+  <footer>
+    Made with ☕ and ❤️ — 2025 Coffee Devs United
+  </footer>
+
+  <script>
+    const quotes = [
+      "“Coffee is a hug in a mug.”",
+      "“A yawn is a silent scream for coffee.”",
+      "“Coffee: because adulting is hard.”",
+      "“Stressed, blessed, and coffee obsessed.”",
+      "“I don't have a problem with caffeine. I have a problem without it.”"
+    ];
+
+    function newQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteBox").textContent = quotes[random];
+    }
+  </script>
+
+</body>
+</html>
