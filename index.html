@@ -1,105 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coffee Lover's Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Report Of Mohit Jani - AWS, Linux & DevOps</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f6f2;
-      color: #3e2c2c;
+      background: linear-gradient(to bottom right, #fff9c4, #fce4ec);
+      color: #333;
     }
-
     header {
-      background: linear-gradient(90deg, #6f4e37, #a47149);
+      background-color: #9c27b0;
       color: white;
-      padding: 4rem 2rem;
+      padding: 30px 20px;
       text-align: center;
     }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    section {
+      padding: 40px;
+      margin: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
     }
-
-    header p {
-      font-size: 1.2rem;
+    h1, h2, h3 {
+      color: #6a1b9a;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      text-align: center;
+    .highlight {
+      background-color: #f3e5f5;
+      padding: 12px;
+      border-left: 6px solid #ab47bc;
     }
-
-    .quote-box {
-      background: #fff3e0;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      font-style: italic;
-      transition: all 0.3s ease;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
-
-    .btn-refresh {
-      background-color: #6f4e37;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .btn-refresh:hover {
-      background-color: #563b2a;
-    }
-
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 15px;
+    }
+    nav {
+      text-align: center;
+      background: #f8bbd0;
+      padding: 12px;
+    }
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #4a148c;
+      font-weight: bold;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .icon {
+      color: #9c27b0;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>☕ Coffee Lover's Hub this is. Here you will get coffee.</h1>
-    <p>Your daily dose of caffeine and good vibes</p>
-  </header>
+<header>
+  <h1><i class="fas fa-laptop-code"></i> Internship Report Of Mohit Jani</h1>
+  <p>AWS | Linux | DevOps</p>
+</header>
 
-  <div class="container">
-    <div class="quote-box" id="quoteBox">
-      “Life happens, coffee helps.”
+<nav>
+  <a href="#overview"><i class="fas fa-industry icon"></i>Industry</a>
+  <a href="#company"><i class="fas fa-building icon"></i>Company</a>
+  <a href="#linux"><i class="fab fa-linux icon"></i>Linux</a>
+  <a href="#cloud"><i class="fas fa-cloud icon"></i>Cloud</a>
+  <a href="#aws"><i class="fab fa-aws icon"></i>AWS</a>
+  <a href="#project"><i class="fas fa-project-diagram icon"></i>Project</a>
+  <a href="#conclusion"><i class="fas fa-lightbulb icon"></i>Conclusion</a>
+</nav>
+
+<section id="overview">
+  <h2><i class="fas fa-industry icon"></i> Industry Overview</h2>
+  <p class="highlight">IT is transforming businesses with cloud, AI, and cybersecurity. India plays a pivotal global role.</p>
+</section>
+
+<section id="company">
+  <h2><i class="fas fa-building icon"></i> Company Overview</h2>
+  <div class="grid">
+    <div>
+      <h3>Electromech Cloudtech</h3>
+      <p>Founded in 1996, offering AWS cloud consulting, Linux training, and AI-based solutions.</p>
     </div>
-    <button class="btn-refresh" onclick="newQuote()">Get a New Quote</button>
+    <div>
+      <h3>Directors</h3>
+      <ul>
+        <li>Nilesh Vaghela</li>
+        <li>Dimple Vaghela</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="linux">
+  <h2><i class="fab fa-linux icon"></i> Linux Overview</h2>
+  <ul>
+    <li><strong>Why Linux:</strong> Open-source, secure, stable</li>
+    <li><strong>Popular Distros:</strong> Ubuntu, RHEL, CentOS, Kali</li>
+    <li><strong>Tasks:</strong> Apache, LAMP, Docker, Tomcat, Supervisord</li>
+  </ul>
+</section>
+
+<section id="cloud">
+  <h2><i class="fas fa-cloud icon"></i> Cloud Computing</h2>
+  <p class="highlight">Cloud platforms include AWS, Azure, and GCP with deployment models like Public, Private, and Hybrid.</p>
+</section>
+
+<section id="aws">
+  <h2><i class="fab fa-aws icon"></i> AWS Core Services</h2>
+  <div class="grid">
+    <div><h3><i class="fas fa-server icon"></i> EC2</h3><p>Virtual servers to run applications</p></div>
+    <div><h3><i class="fas fa-database icon"></i> S3</h3><p>Object storage for backups and hosting</p></div>
+    <div><h3><i class="fas fa-database icon"></i> RDS</h3><p>Managed database services (MySQL, PostgreSQL)</p></div>
+    <div><h3><i class="fas fa-network-wired icon"></i> VPC</h3><p>Isolated network environment for AWS resources</p></div>
+    <div><h3><i class="fas fa-user-shield icon"></i> IAM</h3><p>User access and permissions control</p></div>
+    <div><h3><i class="fas fa-project-diagram icon"></i> ELB</h3><p>Load balancing across multiple EC2s</p></div>
   </div>
 
-  <footer>
-    Made with ☕ and ❤️ — 2025 Coffee Devs United States.
-  </footer>
+  <h2><i class="fas fa-cogs icon"></i> DevOps Services</h2>
+  <ul>
+    <li><strong>CodeBuild:</strong> Builds source code</li>
+    <li><strong>CodeDeploy:</strong> Automates deployments</li>
+    <li><strong>CodePipeline:</strong> Full CI/CD pipeline</li>
+  </ul>
+</section>
 
-  <script>
-    const quotes = [
-      "“Coffee is a hug in a mug.”",
-      "“A yawn is a silent scream for coffee.”",
-      "“Coffee: because adulting is hard.”",
-      "“Stressed, blessed, and coffee obsessed.”",
-      "“I don't have a problem with caffeine. I have a problem without it.”"
-    ];
+<section id="project">
+  <h2><i class="fas fa-project-diagram icon"></i> Project</h2>
+  <p>Deployed a static website from GitHub to S3 using CodePipeline with automated build and deployment steps.</p>
+</section>
 
-    function newQuote() {
-      const random = Math.floor(Math.random() * quotes.length);
-      document.getElementById("quoteBox").textContent = quotes[random];
-    }
-  </script>
+<section id="conclusion">
+  <h2><i class="fas fa-lightbulb icon"></i> Conclusion</h2>
+  <p>
+    This internship deepened my understanding of Linux system administration, cloud infrastructure with AWS,
+    and automation through DevOps tools. It enhanced my ability to build, manage, and deploy secure, scalable,
+    and efficient IT solutions.
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Internship Report. All Rights Reserved.</p>
+</footer>
+
+<script>
+  ScrollReveal().reveal('section', {
+    distance: '40px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    origin: 'bottom',
+    reset: false
+  });
+</script>
 
 </body>
 </html>
